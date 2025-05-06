@@ -31,17 +31,12 @@ public class MainActivity extends AppCompatActivity {
         lay1 = findViewById(R.id.lay1);
     }
 
-    public void doAuto(View v) {
-        if (s1.isChecked()) {
+    public void change_color(View v) {
+        if (s1.isChecked() || v.getId() == R.id.btn1) {
             color();
         }
     }
 
-    public void doManual(View v) {
-        if (!s1.isChecked()) {
-           color();
-        }
-    }
 
     public void color() {
         int pick = rg1.getCheckedRadioButtonId();
